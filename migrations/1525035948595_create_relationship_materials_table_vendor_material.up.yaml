@@ -1,0 +1,9 @@
+- args:
+    name: materials
+    table: vendor_material
+    using:
+      manual_configuration:
+        column_mapping:
+          material_id: id
+        remote_table: material
+  type: create_array_relationship

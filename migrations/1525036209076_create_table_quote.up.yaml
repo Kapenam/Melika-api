@@ -1,0 +1,9 @@
+- args:
+    sql: CREATE TABLE "quote"("id" bigserial NOT NULL, "quote_id" text NOT NULL, "margin"
+      numeric NOT NULL, "total_price" numeric NOT NULL, "created" timestamptz NOT
+      NULL DEFAULT now(), "last_updated" timestamptz NOT NULL DEFAULT now(), PRIMARY
+      KEY ("id") )
+  type: run_sql
+- args:
+    name: quote
+  type: add_existing_table_or_view

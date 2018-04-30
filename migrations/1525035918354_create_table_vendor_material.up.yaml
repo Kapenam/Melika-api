@@ -1,0 +1,9 @@
+- args:
+    sql: CREATE TABLE "vendor_material"("id" bigserial NOT NULL, "vendor_id" bigint
+      NOT NULL, "material_id" bigint NOT NULL, "price" numeric NOT NULL, "created"
+      timestamptz NOT NULL DEFAULT now(), "last_updated" timestamptz NOT NULL DEFAULT
+      now(), PRIMARY KEY ("vendor_id","material_id") )
+  type: run_sql
+- args:
+    name: vendor_material
+  type: add_existing_table_or_view

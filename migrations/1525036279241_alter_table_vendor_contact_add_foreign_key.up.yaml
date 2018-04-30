@@ -1,0 +1,4 @@
+- args:
+    sql: ALTER TABLE "vendor_contact" ADD FOREIGN KEY ("vendor_id") REFERENCES "vendor"
+      ("id")
+  type: run_sql

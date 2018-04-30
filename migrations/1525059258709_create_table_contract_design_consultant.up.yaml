@@ -1,0 +1,9 @@
+- args:
+    sql: CREATE TABLE "contract_design_consultant"("id" bigserial NOT NULL, "contract_id"
+      bigint NOT NULL, "design_consultant_id" bigint NOT NULL, "created" timestamptz
+      NOT NULL DEFAULT now(), "last_updated" timestamptz NOT NULL DEFAULT now(), PRIMARY
+      KEY ("contract_id","design_consultant_id") )
+  type: run_sql
+- args:
+    name: contract_design_consultant
+  type: add_existing_table_or_view

@@ -1,0 +1,9 @@
+- args:
+    sql: CREATE TABLE "customer"("id" bigserial NOT NULL, "first_name" text NOT NULL,
+      "last_name" text NOT NULL, "lead_source" text NOT NULL, "created" timestamptz
+      NOT NULL DEFAULT now(), "last_updated" timestamptz NOT NULL DEFAULT now(), PRIMARY
+      KEY ("id") )
+  type: run_sql
+- args:
+    name: customer
+  type: add_existing_table_or_view

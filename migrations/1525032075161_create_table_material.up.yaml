@@ -1,0 +1,8 @@
+- args:
+    sql: CREATE TABLE "material"("id" bigserial NOT NULL, "name" text NOT NULL, "category_id"
+      bigint NOT NULL, "created" timestamptz NOT NULL DEFAULT now(), "last_updated"
+      timestamptz NOT NULL DEFAULT now(), PRIMARY KEY ("id") )
+  type: run_sql
+- args:
+    name: material
+  type: add_existing_table_or_view

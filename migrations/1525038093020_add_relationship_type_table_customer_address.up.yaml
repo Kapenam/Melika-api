@@ -1,0 +1,6 @@
+- args:
+    name: type
+    table: customer_address
+    using:
+      foreign_key_constraint_on: location_type_id
+  type: create_object_relationship

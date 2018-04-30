@@ -1,0 +1,6 @@
+- args:
+    name: quote
+    table: quoted_model
+    using:
+      foreign_key_constraint_on: quote_id
+  type: create_object_relationship

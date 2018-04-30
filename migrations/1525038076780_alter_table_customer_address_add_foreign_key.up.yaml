@@ -1,0 +1,4 @@
+- args:
+    sql: ALTER TABLE "customer_address" ADD FOREIGN KEY ("location_type_id") REFERENCES
+      "address_type" ("id")
+  type: run_sql
