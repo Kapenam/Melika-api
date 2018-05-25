@@ -15,10 +15,10 @@
 # defaultRoles: ["admin"]
 defaultProviders:
   username:
-    enabled: "true"
+    enabled: "false"
     defaultRoles: []
   email:
-    enabled: "false"
+    enabled: "true"
     defaultRoles: []
   mobile:
     enabled: "false"
@@ -48,6 +48,15 @@ session:
   cookieSecure: "true"
   # The default age of a user session in seconds. Default: 181440 (3 weeks)
   sessionAge: "1814400"
+
+  uiKit:
+    # can be enabled or disabled; default value is "true"
+    enabled: "true"
+    # can configure theme to be either "light" or "dark"; default value is "dark"
+    theme: "light"
+    # URL to redirect to after successfull auth; default value is null
+    # use https://www.{{ cluster.name }}.hasura-app.io/ to redirect to www after login
+    redirectUrl: null
 
 # Configuration related to the email provider
 email:
