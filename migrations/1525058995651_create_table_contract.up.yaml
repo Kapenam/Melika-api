@@ -1,0 +1,10 @@
+- args:
+    sql: CREATE TABLE "contract"("id" bigserial NOT NULL, "number" text NOT NULL,
+      "quote_id" bigint NOT NULL, "customer_id" bigint NOT NULL, "total_price" numeric
+      NOT NULL, "signed_date" timestamptz NOT NULL DEFAULT now(), "created" timestamptz
+      NOT NULL DEFAULT now(), "last_updated" timestamptz NOT NULL DEFAULT now(), PRIMARY
+      KEY ("id") )
+  type: run_sql
+- args:
+    name: contract
+  type: add_existing_table_or_view

@@ -1,0 +1,8 @@
+- args:
+    sql: CREATE TABLE "address_type"("id" bigserial NOT NULL, "name" text NOT NULL,
+      "created" timestamptz NOT NULL DEFAULT now(), "last_updated" timestamptz NOT
+      NULL DEFAULT now(), PRIMARY KEY ("id") )
+  type: run_sql
+- args:
+    name: address_type
+  type: add_existing_table_or_view

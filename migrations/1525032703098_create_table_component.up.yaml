@@ -1,0 +1,9 @@
+- args:
+    sql: CREATE TABLE "component"("id" bigserial NOT NULL, "name" text NOT NULL, "material_id"
+      bigint NOT NULL, "quantity" numeric NOT NULL, "price" numeric NOT NULL, "created"
+      timestamptz NOT NULL DEFAULT now(), "last_updated" timestamptz NOT NULL DEFAULT
+      now(), PRIMARY KEY ("id") )
+  type: run_sql
+- args:
+    name: component
+  type: add_existing_table_or_view

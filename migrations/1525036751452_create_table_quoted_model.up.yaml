@@ -1,0 +1,10 @@
+- args:
+    sql: CREATE TABLE "quoted_model"("id" bigserial NOT NULL, "quote_id" bigint NOT
+      NULL, "model_id" bigint NOT NULL, "quantity" numeric NOT NULL, "material_price"
+      numeric NOT NULL, "labor_price" numeric NOT NULL, "created" timestamptz NOT
+      NULL DEFAULT now(), "last_updated" timestamptz NOT NULL DEFAULT now(), PRIMARY
+      KEY ("quote_id","model_id") )
+  type: run_sql
+- args:
+    name: quoted_model
+  type: add_existing_table_or_view

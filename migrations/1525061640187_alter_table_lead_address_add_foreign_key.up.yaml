@@ -1,0 +1,4 @@
+- args:
+    sql: ALTER TABLE "lead_address" ADD FOREIGN KEY ("lead_id") REFERENCES "lead"
+      ("id")
+  type: run_sql

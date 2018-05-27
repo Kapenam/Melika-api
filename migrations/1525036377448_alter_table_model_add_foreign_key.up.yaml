@@ -1,0 +1,4 @@
+- args:
+    sql: ALTER TABLE "model" ADD FOREIGN KEY ("component_id") REFERENCES "component"
+      ("id")
+  type: run_sql

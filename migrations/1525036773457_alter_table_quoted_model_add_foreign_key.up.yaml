@@ -1,0 +1,4 @@
+- args:
+    sql: ALTER TABLE "quoted_model" ADD FOREIGN KEY ("quote_id") REFERENCES "quote"
+      ("id")
+  type: run_sql

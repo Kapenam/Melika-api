@@ -1,0 +1,9 @@
+- args:
+    name: components
+    table: model
+    using:
+      manual_configuration:
+        column_mapping:
+          component_id: id
+        remote_table: component
+  type: create_array_relationship

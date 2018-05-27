@@ -1,0 +1,4 @@
+- args:
+    sql: ALTER TABLE "category" ADD COLUMN "last_updated" timestamptz NOT NULL DEFAULT
+      now()
+  type: run_sql

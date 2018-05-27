@@ -1,0 +1,8 @@
+- args:
+    name: contacts
+    table: vendor
+    using:
+      foreign_key_constraint_on:
+        column: vendor_id
+        table: vendor_contact
+  type: create_array_relationship

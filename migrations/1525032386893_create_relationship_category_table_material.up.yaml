@@ -1,0 +1,9 @@
+- args:
+    name: category
+    table: material
+    using:
+      manual_configuration:
+        column_mapping:
+          category_id: id
+        remote_table: category
+  type: create_object_relationship
