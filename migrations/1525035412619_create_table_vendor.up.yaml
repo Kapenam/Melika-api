@@ -1,0 +1,10 @@
+- args:
+    sql: CREATE TABLE "vendor"("id" bigserial NOT NULL, "name" text NOT NULL, "address_street"
+      text NOT NULL, "address_suite" text NOT NULL, "addres_city" text NOT NULL, "address_state"
+      text NOT NULL, "address_zip" text NOT NULL, "created" timestamptz NOT NULL DEFAULT
+      now(), "last_updated" timestamptz NOT NULL DEFAULT now(), PRIMARY KEY ("id")
+      )
+  type: run_sql
+- args:
+    name: vendor
+  type: add_existing_table_or_view

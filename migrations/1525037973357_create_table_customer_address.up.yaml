@@ -1,0 +1,10 @@
+- args:
+    sql: CREATE TABLE "customer_address"("id" bigserial NOT NULL, "customer_id" bigint
+      NOT NULL, "street_name" text NOT NULL, "suite" text NOT NULL, "city" text NOT
+      NULL, "state" text NOT NULL, "zip" text NOT NULL, "location_type_id" bigint
+      NOT NULL, "created" timestamptz NOT NULL DEFAULT now(), "last_updated" timestamptz
+      NOT NULL DEFAULT now(), PRIMARY KEY ("id") )
+  type: run_sql
+- args:
+    name: customer_address
+  type: add_existing_table_or_view

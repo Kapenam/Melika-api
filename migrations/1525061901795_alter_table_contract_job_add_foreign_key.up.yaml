@@ -1,0 +1,4 @@
+- args:
+    sql: ALTER TABLE "contract_job" ADD FOREIGN KEY ("contract_id") REFERENCES "contract"
+      ("id")
+  type: run_sql

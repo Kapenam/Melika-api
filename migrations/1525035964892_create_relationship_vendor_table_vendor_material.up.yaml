@@ -1,0 +1,9 @@
+- args:
+    name: vendor
+    table: vendor_material
+    using:
+      manual_configuration:
+        column_mapping:
+          vendor_id: id
+        remote_table: vendor
+  type: create_object_relationship

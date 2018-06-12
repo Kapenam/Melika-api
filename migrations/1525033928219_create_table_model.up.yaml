@@ -1,0 +1,9 @@
+- args:
+    sql: CREATE TABLE "model"("id" bigserial NOT NULL, "name" text NOT NULL, "component_id"
+      bigint NOT NULL, "labor_price" numeric NOT NULL, "created" timestamptz NOT NULL
+      DEFAULT now(), "last_updated" timestamptz NOT NULL DEFAULT now(), PRIMARY KEY
+      ("id") )
+  type: run_sql
+- args:
+    name: model
+  type: add_existing_table_or_view

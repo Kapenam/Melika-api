@@ -1,0 +1,4 @@
+- args:
+    relationship: materials
+    table: vendor_material
+  type: drop_relationship

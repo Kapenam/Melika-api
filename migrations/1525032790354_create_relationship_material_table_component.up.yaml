@@ -1,0 +1,9 @@
+- args:
+    name: material
+    table: component
+    using:
+      manual_configuration:
+        column_mapping:
+          material_id: id
+        remote_table: material
+  type: create_object_relationship

@@ -1,0 +1,8 @@
+- args:
+    name: design_consultants
+    table: contract
+    using:
+      foreign_key_constraint_on:
+        column: contract_id
+        table: contract_design_consultant
+  type: create_array_relationship

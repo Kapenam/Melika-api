@@ -1,0 +1,3 @@
+- args:
+    sql: DROP TABLE "contract_design_consultant"
+  type: run_sql
